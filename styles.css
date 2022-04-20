@@ -1,0 +1,139 @@
+/* Poppins */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* Work Sans */
+/* @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"); */
+
+/* Roboto */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title img {
+  width: 50%;
+}
+
+.details-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.preferences-wrapper {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#detailsList {
+  display: none;
+}
+
+.detail-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.detail-text {
+  font-size: 0.9rem;
+  color: #6d6d6d;
+}
+
+.product-inputs-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.product-inputs-wrapper input {
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbbab8;
+  border-radius: 5px;
+}
+
+#btnSend {
+  width: 350px;
+  padding: 1.5rem;
+  border: none;
+  margin: auto;
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--color-sec);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnSend:hover {
+  opacity: 0.9;
+}
+
+#btnSend:active {
+  background-color: #b65505;
+}
+
+.button-wrapper {
+  display: flex;
+}

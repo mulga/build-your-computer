@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/6b7d429c30.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-wrapper">
+        <div class="title">
+          <img src="images/mbp-14-digitalmat-gallery-1-202111.png" alt="" />
+          <h2>Build your own computer</h2>
+        </div>
+
+        <div class="preferences-wrapper" id="detailsList">
+          <p class="detail-text">This is your computer</p>
+          <div class="details-list">
+            <div>
+              <p class="detail-title">Model</p>
+              <p class="detail-text" id="model-text">0Z15G-00160</p>
+            </div>
+            <div>
+              <p class="detail-title">DISPLAY</p>
+              <p class="detail-text" id="displayText">
+                14 inches (3024 x 1964 ), 120Hz
+              </p>
+            </div>
+
+            <div>
+              <p class="detail-title">KEYBOARD LANGUAGE</p>
+              <p class="detail-text" id="keyboardText">English</p>
+            </div>
+            <div>
+              <p class="detail-title">MEMORY</p>
+              <p class="detail-text" id="memoryText">16GB</p>
+            </div>
+            <div>
+              <p class="detail-title">STORAGE</p>
+              <p class="detail-text" id="storageText">1TB SSD</p>
+            </div>
+            <div>
+              <p class="detail-title">PROCESSOR</p>
+              <p class="detail-text" id="processorText">Apple M1 Pro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-inputs-wrapper">
+        <div>
+          <label for="model">MODEL</label> <br />
+          <input type="text" name="model" id="model" placeholder="0Z15G" />
+        </div>
+        <div>
+          <label for="display">DISPLAY</label> <br />
+          <input
+            type="text"
+            name="display"
+            id="display"
+            placeholder="14 Inces"
+          />
+        </div>
+        <div>
+          <label for="keyboard">KEYBOARD </label> <br />
+          <input
+            type="text"
+            name="keyboard"
+            id="keyboard"
+            placeholder="English "
+          />
+        </div>
+        <div>
+          <label for="memory">MEMORY</label> <br />
+          <input type="text" name="memory" id="memory" placeholder="32GB" />
+        </div>
+        <div>
+          <label for="storage">STORAGE</label> <br />
+          <input type="text" name="storage" id="storage" placeholder="1TB" />
+        </div>
+        <div>
+          <label for="processor">PROCESSOR</label> <br />
+          <input
+            type="text"
+            name="processor"
+            id="processor"
+            placeholder="Intel i9"
+          />
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button id="btnSend" onclick="createYourComputer()">
+          Build your computer
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
